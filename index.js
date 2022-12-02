@@ -14,3 +14,5 @@ app.get("/status", (req, res) => {
   res.status(200);
   res.send(response);
 });
+
+app.listen(1989, () => console.log("listening on 1989"));

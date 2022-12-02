@@ -1,6 +1,7 @@
-FROM node:latest
+FROM node:12
 WORKDIR /home/node/app
 COPY . .
 RUN npm install
-CMD npm run start
-EXPOSE 8888
+COPY . /home/node/app
+EXPOSE 1989
+CMD ["npm", "start"]
